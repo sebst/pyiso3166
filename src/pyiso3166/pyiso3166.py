@@ -8,7 +8,8 @@ import urllib.request
 __all__ = ['Iso3166Data']
 
 class Iso3166Data():
-    SRC_URL = 'https://raw.githubusercontent.com/esosedi/3166/master/data/iso3166-2.json'
+    # SRC_URL = 'https://raw.githubusercontent.com/esosedi/3166/master/data/iso3166-2.json'
+    SRC_URL = 'https://raw.githubusercontent.com/sebst/pyiso3166/master/data/iso3166-2.json'
     EXPECTED_HASH = "e56de6051b8e80f5aa1cd93a8d1ea3af142b34c5b54720405ce2c3a0e9816790"
     CACHE_FILE_NAME = "%s/iso3166-2.json"%(DIR)
 
