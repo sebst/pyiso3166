@@ -45,7 +45,7 @@ class Iso3166Data():
     def _load_from_src(self):
         o = urlparse(self.SRC_URL)
         if o.scheme in ['http', 'https']:
-            return self._load_from_src(self.SRC_URL)
+            return self._load_from_src_web(self.SRC_URL)
         if o.scheme in ['file']:
             return self._load_from_src_file(self.SRC_URL)
         raise NotImplementedError("Scheme `%s` is not supported."%(o.scheme))
