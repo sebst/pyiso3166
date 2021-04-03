@@ -1,0 +1,6 @@
+{
+    "python.venvPath": "/root/.cache/pypoetry/virtualenvs",
+    "python.formatting.provider": "black",
+    "_workbench.uiExtensions" : [ "peterjausovec.vscode-docker" ],
+    "python.jediEnabled": false
+}

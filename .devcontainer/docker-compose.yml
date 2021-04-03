@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+    pyiso3166:
+        build:
+            context: ..
+            dockerfile: .devcontainer/Dockerfile.dev
+        volumes:
+            - ..:/usr/src/app
+        command: sleep infinity

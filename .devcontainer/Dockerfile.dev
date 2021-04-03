@@ -1,0 +1,9 @@
+FROM python:3.9-slim
+
+# Visual Studio Code Live Share in Container
+RUN apt update && apt-get install git-core build-essential wget curl sqlite3 apt-utils -o APT::Install-Suggests=0 -y --no-install-recommends --no-install-suggests
+RUN wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
+
+WORKDIR /usr/src/app
+
+COPY . .
